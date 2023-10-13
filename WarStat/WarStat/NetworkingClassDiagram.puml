@@ -1,0 +1,25 @@
+@startuml ClassDiagram
+
+interface NetworkingProtocol {
+    {static} Result<T, Error> performDataRequest()
+}
+
+enum Networking
+
+Networking --|> NetworkingProtocol
+
+enum URLScheme {
+    http
+    https
+}
+
+interface URLConstructable {
+    URLScheme scheme
+    String host
+    String path
+    URL url
+}
+
+URLConstructable --o URLScheme
+
+@enduml

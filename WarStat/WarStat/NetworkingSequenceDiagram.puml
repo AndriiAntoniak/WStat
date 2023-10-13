@@ -1,0 +1,32 @@
+@startuml ClassDiagram
+
+actor User
+
+participant ApplicationLayer as AL
+
+participant DomainLayer as DL
+
+participant BusinessLayer as BL
+
+User -> AL: Clicks on LoadInfo button
+
+AL --> DL: Prepare LoadInfo request
+AL --> DL: Prepare LoadStatus request
+
+DL --> BL: Perform API request for WarInfo
+activate BL
+
+DL --> BL: Perform API request WarStatus
+activate BL
+
+return Handle API response and decode data to the WarInfo DTO
+
+DL <-- BL: Handle API response and decode data to the WarStatus DTO
+deactivate BL
+
+AL <-- DL: Map WarInfo DTO into entity and return it to the View
+AL <-- DL: Map WarStatus DTO into entity and return it to the View
+
+User <-- AL: Update UI with war info and status
+
+@enduml
