@@ -10,16 +10,27 @@ import Foundation
 protocol NetworkingProtocol {
     associatedtype T: Decodable
     
-    static func performDataRequest(with url: URL) async -> Result<T, Error>
+    func performDataRequest(with url: URL, httpMethod: HTTPMethod) async -> Result<T, NetworkingError>
 }
 
-enum Networking<T: Decodable>: NetworkingProtocol {
-    static func performDataRequest(with url: URL) async -> Result<T, Error> {
+struct Networking<T: Decodable>: NetworkingProtocol {
+    let urlSession: URLSession
+    
+    init(urlSession: URLSession = URLSession.shared) {
+        self.urlSession = urlSession
+    }
+    
+    func performDataRequest(with url: URL, httpMethod: HTTPMethod = .get) async -> Result<T, NetworkingError> {
+        // TODO: - Implement URLRequestConstructable
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = httpMethod.rawValue
+        // TODO: - Implement handling headers
+        
         do {
-            let (data, _) = try await URLSession.shared.data(from: url)
+            let (data, _) = try await urlSession.data(for: urlRequest)
             return T.decode(data)
         } catch {
-            return .failure(NSError())
+            return .failure(NetworkingError.requestFailed)
         }
     }
 }

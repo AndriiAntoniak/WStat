@@ -23,6 +23,3 @@ enum WarInfoURL: URLConstructable {
         }
     }
 }
-
-#warning("Giffy")
-#warning("Throwing computed property")

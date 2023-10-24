@@ -10,4 +10,5 @@ import Foundation
 enum NetworkingError: Error {
     case decodingFailed
     case cannotConstructUrl
+    case requestFailed
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 extension Decodable {
-    static func decode(_ data: Data) -> Result<Self, Error> {
+    static func decode(_ data: Data) -> Result<Self, NetworkingError> {
         do {
             let decodedObject = try JSONDecoder().decode(Self.self, from: data)
             return .success(decodedObject)
