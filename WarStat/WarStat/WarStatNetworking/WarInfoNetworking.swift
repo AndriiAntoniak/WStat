@@ -7,7 +7,7 @@
 
 import Foundation
 
-typealias InfoResult = Result<WarInfoDTO, Error>
+typealias InfoResult = Result<WarInfoDTO, WarInfoError>
 
 protocol WarInfoNetworkingProtocol {
     static func loadInfo() async -> InfoResult
@@ -18,7 +18,7 @@ enum WarInfoNetworking {
     #warning("async throws -> WarInfoDTO")
     static func loadInfo() async -> InfoResult {
         guard let infoURL = WarInfoURL.info.url else {
-            return .failure(NSError())
+            return .failure(.requestFailed)
         }
         return await Networking()
             .performDataRequest(with: infoURL)
@@ -35,7 +35,7 @@ enum WarInfoNetworking {
                     WarInfoError.requestFailed
                 }
         } catch {
-            return .failure(error)
+            return .failure(WarInfoError.requestFailed)
         }
     }
 }
