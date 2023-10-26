@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum NetworkingError: Error {
+public enum NetworkingError: Error {
     case decodingFailed
     case cannotConstructUrl
     case requestFailed

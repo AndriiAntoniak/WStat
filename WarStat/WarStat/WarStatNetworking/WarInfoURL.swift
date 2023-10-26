@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import WSNetworking
 
 enum WarInfoURL: URLConstructable {
     case info

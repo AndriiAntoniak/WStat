@@ -7,18 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0ACBE35E2AD4B4AA0048EC0F /* URLConstructable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE35D2AD4B4AA0048EC0F /* URLConstructable.swift */; };
-		0ACBE3602AD4BBD50048EC0F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE35F2AD4BBD50048EC0F /* Networking.swift */; };
 		0ACBE3632AD4C20A0048EC0F /* WarInfoNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3622AD4C20A0048EC0F /* WarInfoNetworking.swift */; };
 		0ACBE3652AD4C2260048EC0F /* WarInfoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3642AD4C2260048EC0F /* WarInfoURL.swift */; };
 		0ACBE3682AD4C25C0048EC0F /* SupportingLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3672AD4C25C0048EC0F /* SupportingLanguage.swift */; };
-		0ACBE36A2AD4C6EC0048EC0F /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3692AD4C6EC0048EC0F /* NetworkingError.swift */; };
-		0ACBE36D2AD4C7940048EC0F /* Decodable+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE36C2AD4C7940048EC0F /* Decodable+Decode.swift */; };
 		0ACBE3702AD4CAB30048EC0F /* WarInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE36F2AD4CAB30048EC0F /* WarInfoDTO.swift */; };
 		0ACBE3722AD4CAC00048EC0F /* WarInfoDataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3712AD4CAC00048EC0F /* WarInfoDataDTO.swift */; };
 		0ACBE3742AD4CAD80048EC0F /* WarStatusDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3732AD4CAD80048EC0F /* WarStatusDTO.swift */; };
 		0ACBE3762AD4CCE00048EC0F /* WarStatusAliasDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3752AD4CCE00048EC0F /* WarStatusAliasDTO.swift */; };
-		0ACBE3782AD4D1D70048EC0F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3772AD4D1D70048EC0F /* HTTPMethod.swift */; };
+		0ACBE4212AE803F70048EC0F /* WSNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACBE4202AE803F70048EC0F /* WSNetworking.framework */; };
+		0ACBE4222AE803F70048EC0F /* WSNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACBE4202AE803F70048EC0F /* WSNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AFCBA482AB31814007D58A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFCBA472AB31814007D58A3 /* AppDelegate.swift */; };
 		0AFCBA4A2AB31814007D58A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFCBA492AB31814007D58A3 /* SceneDelegate.swift */; };
 		0AFCBA4C2AB31814007D58A3 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFCBA4B2AB31814007D58A3 /* DemoViewController.swift */; };
@@ -38,19 +35,30 @@
 		0AFCBA852AC44459007D58A3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFCBA842AC44459007D58A3 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0ACBE3F22AE801F20048EC0F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0ACBE4222AE803F70048EC0F /* WSNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0ACBE35D2AD4B4AA0048EC0F /* URLConstructable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstructable.swift; sourceTree = "<group>"; };
-		0ACBE35F2AD4BBD50048EC0F /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		0ACBE3622AD4C20A0048EC0F /* WarInfoNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarInfoNetworking.swift; sourceTree = "<group>"; };
 		0ACBE3642AD4C2260048EC0F /* WarInfoURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarInfoURL.swift; sourceTree = "<group>"; };
 		0ACBE3672AD4C25C0048EC0F /* SupportingLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingLanguage.swift; sourceTree = "<group>"; };
-		0ACBE3692AD4C6EC0048EC0F /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
-		0ACBE36C2AD4C7940048EC0F /* Decodable+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Decode.swift"; sourceTree = "<group>"; };
 		0ACBE36F2AD4CAB30048EC0F /* WarInfoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarInfoDTO.swift; sourceTree = "<group>"; };
 		0ACBE3712AD4CAC00048EC0F /* WarInfoDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarInfoDataDTO.swift; sourceTree = "<group>"; };
 		0ACBE3732AD4CAD80048EC0F /* WarStatusDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarStatusDTO.swift; sourceTree = "<group>"; };
 		0ACBE3752AD4CCE00048EC0F /* WarStatusAliasDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarStatusAliasDTO.swift; sourceTree = "<group>"; };
-		0ACBE3772AD4D1D70048EC0F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		0ACBE3EB2AE801F20048EC0F /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		0ACBE4202AE803F70048EC0F /* WSNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WSNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFCBA442AB31814007D58A3 /* WarStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFCBA472AB31814007D58A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AFCBA492AB31814007D58A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,24 +88,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ACBE4212AE803F70048EC0F /* WSNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0ACBE35C2AD4B4270048EC0F /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				0ACBE35D2AD4B4AA0048EC0F /* URLConstructable.swift */,
-				0ACBE35F2AD4BBD50048EC0F /* Networking.swift */,
-				0ACBE3772AD4D1D70048EC0F /* HTTPMethod.swift */,
-				0ACBE3692AD4C6EC0048EC0F /* NetworkingError.swift */,
-				0ACBE36B2AD4C77D0048EC0F /* Extensions */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
 		0ACBE3612AD4C1F90048EC0F /* WarStatNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,14 +113,6 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
-		0ACBE36B2AD4C77D0048EC0F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				0ACBE36C2AD4C7940048EC0F /* Decodable+Decode.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		0ACBE36E2AD4CAA00048EC0F /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,11 +124,29 @@
 			path = DTOs;
 			sourceTree = "<group>";
 		};
+		0ACBE3EA2AE801F20048EC0F /* NetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				0ACBE3EB2AE801F20048EC0F /* NetworkingTests.swift */,
+			);
+			path = NetworkingTests;
+			sourceTree = "<group>";
+		};
+		0ACBE41F2AE803F70048EC0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0ACBE4202AE803F70048EC0F /* WSNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0AFCBA3B2AB31814007D58A3 = {
 			isa = PBXGroup;
 			children = (
 				0AFCBA462AB31814007D58A3 /* WarStat */,
+				0ACBE3EA2AE801F20048EC0F /* NetworkingTests */,
 				0AFCBA452AB31814007D58A3 /* Products */,
+				0ACBE41F2AE803F70048EC0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				0ACBE3662AD4C2510048EC0F /* Configurations */,
-				0ACBE35C2AD4B4270048EC0F /* Networking */,
 				0ACBE3612AD4C1F90048EC0F /* WarStatNetworking */,
 				0AFCBA772AC30051007D58A3 /* Main */,
 				0AFCBA472AB31814007D58A3 /* AppDelegate.swift */,
@@ -256,6 +262,7 @@
 				0AFCBA402AB31814007D58A3 /* Sources */,
 				0AFCBA412AB31814007D58A3 /* Frameworks */,
 				0AFCBA422AB31814007D58A3 /* Resources */,
+				0ACBE3F22AE801F20048EC0F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,7 +280,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					0AFCBA432AB31814007D58A3 = {
@@ -322,25 +329,20 @@
 				0AFCBA7B2AC30090007D58A3 /* MainViewController.swift in Sources */,
 				0ACBE3762AD4CCE00048EC0F /* WarStatusAliasDTO.swift in Sources */,
 				0ACBE3702AD4CAB30048EC0F /* WarInfoDTO.swift in Sources */,
-				0ACBE3602AD4BBD50048EC0F /* Networking.swift in Sources */,
 				0AFCBA792AC30070007D58A3 /* MainRootView.swift in Sources */,
 				0AFCBA642AB341D2007D58A3 /* ObjcRandomizer.m in Sources */,
-				0ACBE36D2AD4C7940048EC0F /* Decodable+Decode.swift in Sources */,
 				0AFCBA4C2AB31814007D58A3 /* DemoViewController.swift in Sources */,
 				0AFCBA742ABC7C68007D58A3 /* SwiftConcurrency.swift in Sources */,
 				0AFCBA482AB31814007D58A3 /* AppDelegate.swift in Sources */,
 				0AFCBA672ABBAF5B007D58A3 /* SwiftObjCInteroperability.swift in Sources */,
 				0AFCBA7D2AC30510007D58A3 /* LoginView.swift in Sources */,
-				0ACBE36A2AD4C6EC0048EC0F /* NetworkingError.swift in Sources */,
 				0AFCBA5E2AB33DE9007D58A3 /* Randomizer.swift in Sources */,
 				0ACBE3722AD4CAC00048EC0F /* WarInfoDataDTO.swift in Sources */,
 				0AFCBA762ABC7CA5007D58A3 /* ImagesHelper.swift in Sources */,
 				0ACBE3632AD4C20A0048EC0F /* WarInfoNetworking.swift in Sources */,
 				0AFCBA6E2ABC5C9A007D58A3 /* RuntimeClass.m in Sources */,
 				0AFCBA852AC44459007D58A3 /* Theme.swift in Sources */,
-				0ACBE35E2AD4B4AA0048EC0F /* URLConstructable.swift in Sources */,
 				0AFCBA4A2AB31814007D58A3 /* SceneDelegate.swift in Sources */,
-				0ACBE3782AD4D1D70048EC0F /* HTTPMethod.swift in Sources */,
 				0AFCBA6A2ABBAFCE007D58A3 /* SwiftMemoryLayout.swift in Sources */,
 				0ACBE3682AD4C25C0048EC0F /* SupportingLanguage.swift in Sources */,
 				0ACBE3652AD4C2260048EC0F /* WarInfoURL.swift in Sources */,

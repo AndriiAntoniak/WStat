@@ -7,12 +7,12 @@
 
 import Foundation
 
-enum URLScheme: String {
+public enum URLScheme: String {
     case http
     case https
 }
 
-protocol URLConstructable {
+public protocol URLConstructable {
     var scheme: URLScheme { get }
     var host: String { get }
     var path: String { get }
@@ -21,7 +21,7 @@ protocol URLConstructable {
     var url: URL? { get }
 }
 
-extension URLConstructable {
+public extension URLConstructable {
     var scheme: URLScheme { .https }
     
     var throwingUrl: URL {
