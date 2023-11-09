@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Public enumeration for error handling inside the framework.
 public enum NetworkingError: Error {
     case decodingFailed
     case cannotConstructUrl

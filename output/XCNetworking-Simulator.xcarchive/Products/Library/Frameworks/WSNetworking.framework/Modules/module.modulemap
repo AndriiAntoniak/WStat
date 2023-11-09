@@ -1,0 +1,11 @@
+framework module WSNetworking {
+  umbrella header "WSNetworking.h"
+  export *
+
+  module * { export * }
+}
+
+module WSNetworking.Swift {
+  header "WSNetworking-Swift.h"
+  requires objc
+}

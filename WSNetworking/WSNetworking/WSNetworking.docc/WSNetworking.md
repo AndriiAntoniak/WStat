@@ -1,13 +1,15 @@
 # ``WSNetworking``
 
-<!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
+The framework that coordinates a group of related, network data transfer tasks.
 
 ## Overview
 
-<!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
+The ``Networking`` struct provides an API for downloading data from endpoints indicated by URLs.
 
 ## Topics
 
-### <!--@START_MENU_TOKEN@-->Group<!--@END_MENU_TOKEN@-->
 
-- <!--@START_MENU_TOKEN@-->``Symbol``<!--@END_MENU_TOKEN@-->
+### Prepare custom url for the request
+
+- ``URLConstructable``
+- ``URLScheme``

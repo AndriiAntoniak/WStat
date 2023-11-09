@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Public enumeration with all possible http methods.
 public enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"

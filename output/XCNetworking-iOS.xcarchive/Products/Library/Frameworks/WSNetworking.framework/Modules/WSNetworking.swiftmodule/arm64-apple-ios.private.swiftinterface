@@ -1,0 +1,83 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WSNetworking
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+@_exported import WSNetworking
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol NetworkingProtocol {
+  associatedtype T : Swift.Decodable
+  #if compiler(>=5.3) && $AsyncAwait
+  func performDataRequest(with url: Foundation.URL, httpMethod: WSNetworking.HTTPMethod) async -> Swift.Result<Self.T, WSNetworking.NetworkingError>
+  #endif
+}
+public struct Networking<T> : WSNetworking.NetworkingProtocol where T : Swift.Decodable {
+  public init(urlSession: Foundation.URLSession = URLSession.shared)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func performDataRequest(with url: Foundation.URL, httpMethod: WSNetworking.HTTPMethod = .get) async -> Swift.Result<T, WSNetworking.NetworkingError>
+  #endif
+}
+public enum HTTPMethod : Swift.String {
+  case get
+  case post
+  case patch
+  case put
+  case delete
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum URLScheme : Swift.String {
+  case http
+  case https
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol URLConstructable {
+  var scheme: WSNetworking.URLScheme { get }
+  var host: Swift.String { get }
+  var path: Swift.String { get }
+  #if compiler(>=5.3) && $EffectfulProp
+  var throwingUrl: Foundation.URL { get throws }
+  #endif
+  var url: Foundation.URL? { get }
+}
+extension WSNetworking.URLConstructable {
+  public var scheme: WSNetworking.URLScheme {
+    get
+  }
+  #if compiler(>=5.3) && $EffectfulProp
+  public var throwingUrl: Foundation.URL {
+    get throws
+  }
+  #endif
+  public var url: Foundation.URL? {
+    get
+  }
+}
+public enum NetworkingError : Swift.Error {
+  case decodingFailed
+  case cannotConstructUrl
+  case requestFailed
+  public static func == (a: WSNetworking.NetworkingError, b: WSNetworking.NetworkingError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension WSNetworking.HTTPMethod : Swift.Equatable {}
+extension WSNetworking.HTTPMethod : Swift.Hashable {}
+extension WSNetworking.HTTPMethod : Swift.RawRepresentable {}
+extension WSNetworking.URLScheme : Swift.Equatable {}
+extension WSNetworking.URLScheme : Swift.Hashable {}
+extension WSNetworking.URLScheme : Swift.RawRepresentable {}
+extension WSNetworking.NetworkingError : Swift.Equatable {}
+extension WSNetworking.NetworkingError : Swift.Hashable {}
