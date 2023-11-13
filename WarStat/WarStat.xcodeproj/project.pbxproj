@@ -14,8 +14,6 @@
 		0ACBE3722AD4CAC00048EC0F /* WarInfoDataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3712AD4CAC00048EC0F /* WarInfoDataDTO.swift */; };
 		0ACBE3742AD4CAD80048EC0F /* WarStatusDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3732AD4CAD80048EC0F /* WarStatusDTO.swift */; };
 		0ACBE3762AD4CCE00048EC0F /* WarStatusAliasDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3752AD4CCE00048EC0F /* WarStatusAliasDTO.swift */; };
-		0ACBE42D2AEB33150048EC0F /* XCNetworking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACBE42C2AEB33150048EC0F /* XCNetworking.xcframework */; };
-		0ACBE42E2AEB33150048EC0F /* XCNetworking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACBE42C2AEB33150048EC0F /* XCNetworking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AFCBA482AB31814007D58A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFCBA472AB31814007D58A3 /* AppDelegate.swift */; };
 		0AFCBA4A2AB31814007D58A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFCBA492AB31814007D58A3 /* SceneDelegate.swift */; };
 		0AFCBA4C2AB31814007D58A3 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFCBA4B2AB31814007D58A3 /* DemoViewController.swift */; };
@@ -42,7 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0ACBE42E2AEB33150048EC0F /* XCNetworking.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +54,6 @@
 		0ACBE3712AD4CAC00048EC0F /* WarInfoDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarInfoDataDTO.swift; sourceTree = "<group>"; };
 		0ACBE3732AD4CAD80048EC0F /* WarStatusDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarStatusDTO.swift; sourceTree = "<group>"; };
 		0ACBE3752AD4CCE00048EC0F /* WarStatusAliasDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarStatusAliasDTO.swift; sourceTree = "<group>"; };
-		0ACBE42C2AEB33150048EC0F /* XCNetworking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = XCNetworking.xcframework; path = ../output/XCNetworking.xcframework; sourceTree = "<group>"; };
 		0AFCBA442AB31814007D58A3 /* WarStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFCBA472AB31814007D58A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AFCBA492AB31814007D58A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ACBE42D2AEB33150048EC0F /* XCNetworking.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +121,6 @@
 		0ACBE41F2AE803F70048EC0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0ACBE42C2AEB33150048EC0F /* XCNetworking.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

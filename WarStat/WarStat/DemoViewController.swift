@@ -30,10 +30,11 @@ final class DemoViewController: UIViewController {
         super.viewWillAppear(animated)
 //        ObjectiveCRuntime.run()
         
-        Task {
-            async let info = WarInfoNetworking.loadInfo()
-            print("🛠️ Info - \(await info)")
-        }
+        #warning("uncomment")
+//        Task {
+//            async let info = WarInfoNetworking.loadInfo()
+//            print("🛠️ Info - \(await info)")
+//        }
     }
     
     private func configureMainAppButton() {
