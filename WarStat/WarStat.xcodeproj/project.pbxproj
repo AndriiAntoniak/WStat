@@ -57,7 +57,6 @@
 		0ACBE3712AD4CAC00048EC0F /* WarInfoDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarInfoDataDTO.swift; sourceTree = "<group>"; };
 		0ACBE3732AD4CAD80048EC0F /* WarStatusDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarStatusDTO.swift; sourceTree = "<group>"; };
 		0ACBE3752AD4CCE00048EC0F /* WarStatusAliasDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarStatusAliasDTO.swift; sourceTree = "<group>"; };
-		0ACBE4202AE803F70048EC0F /* WSNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WSNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACBE42C2AEB33150048EC0F /* XCNetworking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = XCNetworking.xcframework; path = ../output/XCNetworking.xcframework; sourceTree = "<group>"; };
 		0AFCBA442AB31814007D58A3 /* WarStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFCBA472AB31814007D58A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				0ACBE42C2AEB33150048EC0F /* XCNetworking.xcframework */,
-				0ACBE4202AE803F70048EC0F /* WSNetworking.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
