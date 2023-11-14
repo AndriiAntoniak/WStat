@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "wsnetworking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AndriiAntoniak/WSNetworking",
+      "state" : {
+        "revision" : "94b37d08ed3bc8a1bfbced8a371a50835ce544c5",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}

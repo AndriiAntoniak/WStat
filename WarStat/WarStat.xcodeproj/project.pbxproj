@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A90E9522B02FD78005E084F /* WSNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 0A90E9512B02FD78005E084F /* WSNetworking */; };
 		0ACBE3632AD4C20A0048EC0F /* WarInfoNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3622AD4C20A0048EC0F /* WarInfoNetworking.swift */; };
 		0ACBE3652AD4C2260048EC0F /* WarInfoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3642AD4C2260048EC0F /* WarInfoURL.swift */; };
 		0ACBE3682AD4C25C0048EC0F /* SupportingLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3672AD4C25C0048EC0F /* SupportingLanguage.swift */; };
@@ -83,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A90E9522B02FD78005E084F /* WSNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +255,9 @@
 			dependencies = (
 			);
 			name = WarStat;
+			packageProductDependencies = (
+				0A90E9512B02FD78005E084F /* WSNetworking */,
+			);
 			productName = WarStat;
 			productReference = 0AFCBA442AB31814007D58A3 /* WarStat.app */;
 			productType = "com.apple.product-type.application";
@@ -282,6 +287,9 @@
 				Base,
 			);
 			mainGroup = 0AFCBA3B2AB31814007D58A3;
+			packageReferences = (
+				0A90E9502B02FD78005E084F /* XCRemoteSwiftPackageReference "WSNetworking" */,
+			);
 			productRefGroup = 0AFCBA452AB31814007D58A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -542,6 +550,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A90E9502B02FD78005E084F /* XCRemoteSwiftPackageReference "WSNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndriiAntoniak/WSNetworking";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A90E9512B02FD78005E084F /* WSNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A90E9502B02FD78005E084F /* XCRemoteSwiftPackageReference "WSNetworking" */;
+			productName = WSNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0AFCBA3C2AB31814007D58A3 /* Project object */;
 }
