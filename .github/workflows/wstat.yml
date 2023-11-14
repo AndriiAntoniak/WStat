@@ -1,0 +1,41 @@
+name: Xcode - Build and Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  WarStatBuild:
+    name: Build and Test scheme using xcodebuild command
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build WarStat
+        run: |
+          set -o pipefail && xcodebuild build \
+            -derivedDataPath ../Build/DerivedData \
+            -clonedSourcePackagesDirPath ../Build/ClonedSources \
+            -scheme WarStat \
+            -sdk iphonesimulator \
+            -destination "$iOS_DESTINATION" 2>&1
+      - name: Test WarStat
+        run: |
+          set -o pipefail && xcodebuild test \
+            -derivedDataPath ../Build/DerivedData \
+            -clonedSourcePackagesDirPath ../Build/ClonedSources \
+            -scheme WarStat \
+            -sdk iphonesimulator \
+            -destination "$iOS_DESTINATION" 2>&1
+            
+  SwiftPackageValidation:
+    name: Validate Swift package
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Swift Package
+        run: swift package generate-xcodeproj
