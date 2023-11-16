@@ -37,7 +37,13 @@ jobs:
       #       -sdk iphonesimulator \
       #       -destination "$iOS_DESTINATION" 2>&1
 
-      - name: Select Xcode
-        run: sudo xcode-select -switch /Applications/Xcode_14.2.app
-      - name: Build and test
-        run: xcodebuild clean build -project WarStat/WarStat.xcodeproj -scheme 'WarStat' -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14' ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+      # - name: Select Xcode
+      #   run: sudo xcode-select -switch /Applications/Xcode_14.2.app
+      # - name: Build and test
+      #   run: xcodebuild clean build -project WarStat/WarStat.xcodeproj -scheme 'WarStat' -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14' ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+      - name: Build
+        run: |
+          xcodebuild build \
+            -scheme 'WStat' \
+            -derivedDataPath ./build \
+            -destination 'platform=iOS Simulator,OS=latest,name=iPhone 14'
