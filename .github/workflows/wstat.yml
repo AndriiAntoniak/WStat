@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 env:
-  iOS_DESTINATION: "platform=iOS Simulator,OS=latest,name=iPhone 14"
+  iOS_DESTINATION: "platform=iOS Simulator,OS=latest,name=Any iOS Device"
 
 jobs:
   WarStatBuild:
