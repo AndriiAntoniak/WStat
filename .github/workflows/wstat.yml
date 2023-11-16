@@ -25,7 +25,7 @@ jobs:
             -clonedSourcePackagesDirPath ../Build/ClonedSources \
             -scheme WarStat \
             -sdk iphonesimulator \
-            -destination "$iOS_DESTINATION" 2>&1
+            -destination destinationspecifier
       - name: Test WarStat
         run: |
           set -o pipefail && xcodebuild test \
