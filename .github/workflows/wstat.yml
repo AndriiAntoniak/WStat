@@ -7,9 +7,9 @@ on:
     branches: [ "main" ]
 
 env:
-  DEVELOPER_DIR: /Applications/Xcode_14.2.app/Contents/Developer
+  # DEVELOPER_DIR: /Applications/Xcode_14.2.app/Contents/Developer
   # iOS_DESTINATION: "platform=iOS Simulator,OS=latest,name=iPhone 14"
-  iOS_DESTINATION: "platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device"
+  # iOS_DESTINATION: "platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device"
 
 jobs:
   WarStatBuild:
@@ -19,20 +19,25 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Build WarStat
-        working-directory: WarStat
-        run: |
-          set -o pipefail && xcodebuild build \
-            -derivedDataPath ../Build/DerivedData \
-            -clonedSourcePackagesDirPath ../Build/ClonedSources \
-            -scheme WarStat \
-            -sdk iphonesimulator \
-            -destination "$iOS_DESTINATION" 2>&1
-      - name: Test WarStat
-        run: |
-          set -o pipefail && xcodebuild test \
-            -derivedDataPath ../Build/DerivedData \
-            -clonedSourcePackagesDirPath ../Build/ClonedSources \
-            -scheme WarStat \
-            -sdk iphonesimulator \
-            -destination "$iOS_DESTINATION" 2>&1
+      # - name: Build WarStat
+      #   working-directory: WarStat
+      #   run: |
+      #     set -o pipefail && xcodebuild build \
+      #       -derivedDataPath ../Build/DerivedData \
+      #       -clonedSourcePackagesDirPath ../Build/ClonedSources \
+      #       -scheme WarStat \
+      #       -sdk iphonesimulator \
+      #       -destination "$iOS_DESTINATION" 2>&1
+      # - name: Test WarStat
+      #   run: |
+      #     set -o pipefail && xcodebuild test \
+      #       -derivedDataPath ../Build/DerivedData \
+      #       -clonedSourcePackagesDirPath ../Build/ClonedSources \
+      #       -scheme WarStat \
+      #       -sdk iphonesimulator \
+      #       -destination "$iOS_DESTINATION" 2>&1
+
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_14.2.app
+      - name: Build and test
+        run: xcodebuild clean build -project WarStat/WarStat.xcodeproj -scheme 'WarStat' -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14' ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
