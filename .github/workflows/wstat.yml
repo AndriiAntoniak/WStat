@@ -45,6 +45,6 @@ jobs:
         working-directory: WarStat
         run: |
           xcodebuild build \
-            -scheme 'WStat' \
+            -scheme 'WarStat' \
             -derivedDataPath ./build \
             -destination 'platform=iOS Simulator,OS=latest,name=iPhone 14'
