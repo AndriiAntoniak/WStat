@@ -47,4 +47,4 @@ jobs:
           xcodebuild build \
             -scheme 'WarStat' \
             -derivedDataPath ./build \
-            -destination 'platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device'
+            -destination 'platform=iOS Simulator, id=dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name=Any iOS Simulator Device'
