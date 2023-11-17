@@ -16,8 +16,31 @@
 default_platform(:ios)
 
 platform :ios do
+  desc "This lane builds app"
+  lane :build do
+    xcbuild
+  end
+
   desc "This lane runs unit tests"
   lane :tests do
     run_tests(scheme: "WarStatTests")
+  end
+
+  desc "This lane builds and tests app"
+  lane :buildAndTest do
+    build
+    tests
+  end
+
+  desc "This lane creates IPA file"
+  lane :createIPA do
+    gym(
+      project: "WarStat.xcodeproj",
+      configuration: "Debug",
+      scheme: "WarStat",
+      clean: true,
+      output_directory: "build",
+      output_name: "wstat.ipa"
+    )
   end
 end

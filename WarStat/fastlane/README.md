@@ -15,6 +15,14 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## iOS
 
+### ios build
+
+```sh
+[bundle exec] fastlane ios build
+```
+
+This lane builds app
+
 ### ios tests
 
 ```sh
@@ -22,6 +30,22 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 ```
 
 This lane runs unit tests
+
+### ios buildAndTest
+
+```sh
+[bundle exec] fastlane ios buildAndTest
+```
+
+This lane builds and tests app
+
+### ios createIPA
+
+```sh
+[bundle exec] fastlane ios createIPA
+```
+
+This lane creates IPA file
 
 ----
 
