@@ -40,6 +40,17 @@
                ReferencedContainer = "container:WarStat.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0A7371752B07846700177EA4"
+               BuildableName = "WarStatTests.xctest"
+               BlueprintName = "WarStatTests"
+               ReferencedContainer = "container:WarStat.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

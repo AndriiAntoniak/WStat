@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A7371792B07846800177EA4 /* WarStatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7371782B07846800177EA4 /* WarStatTests.swift */; };
 		0A90E9522B02FD78005E084F /* WSNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 0A90E9512B02FD78005E084F /* WSNetworking */; };
 		0ACBE3632AD4C20A0048EC0F /* WarInfoNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3622AD4C20A0048EC0F /* WarInfoNetworking.swift */; };
 		0ACBE3652AD4C2260048EC0F /* WarInfoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3642AD4C2260048EC0F /* WarInfoURL.swift */; };
@@ -34,6 +35,16 @@
 		0AFCBA852AC44459007D58A3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFCBA842AC44459007D58A3 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0A73717A2B07846800177EA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AFCBA3C2AB31814007D58A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AFCBA432AB31814007D58A3;
+			remoteInfo = WarStat;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		0ACBE3F22AE801F20048EC0F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -48,6 +59,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A7371762B07846700177EA4 /* WarStatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarStatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A7371782B07846800177EA4 /* WarStatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarStatTests.swift; sourceTree = "<group>"; };
 		0ACBE3622AD4C20A0048EC0F /* WarInfoNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarInfoNetworking.swift; sourceTree = "<group>"; };
 		0ACBE3642AD4C2260048EC0F /* WarInfoURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarInfoURL.swift; sourceTree = "<group>"; };
 		0ACBE3672AD4C25C0048EC0F /* SupportingLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingLanguage.swift; sourceTree = "<group>"; };
@@ -80,6 +93,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A7371732B07846700177EA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0AFCBA412AB31814007D58A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A7371772B07846800177EA4 /* WarStatTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A7371782B07846800177EA4 /* WarStatTests.swift */,
+			);
+			path = WarStatTests;
+			sourceTree = "<group>";
+		};
 		0ACBE3612AD4C1F90048EC0F /* WarStatNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				0AFCBA462AB31814007D58A3 /* WarStat */,
+				0A7371772B07846800177EA4 /* WarStatTests */,
 				0AFCBA452AB31814007D58A3 /* Products */,
 				0ACBE41F2AE803F70048EC0F /* Frameworks */,
 			);
@@ -140,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				0AFCBA442AB31814007D58A3 /* WarStat.app */,
+				0A7371762B07846700177EA4 /* WarStatTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,6 +271,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0A7371752B07846700177EA4 /* WarStatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A73717E2B07846800177EA4 /* Build configuration list for PBXNativeTarget "WarStatTests" */;
+			buildPhases = (
+				0A7371722B07846700177EA4 /* Sources */,
+				0A7371732B07846700177EA4 /* Frameworks */,
+				0A7371742B07846700177EA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A73717B2B07846800177EA4 /* PBXTargetDependency */,
+			);
+			name = WarStatTests;
+			productName = WarStatTests;
+			productReference = 0A7371762B07846700177EA4 /* WarStatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0AFCBA432AB31814007D58A3 /* WarStat */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AFCBA582AB31816007D58A3 /* Build configuration list for PBXNativeTarget "WarStat" */;
@@ -272,6 +320,10 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					0A7371752B07846700177EA4 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 0AFCBA432AB31814007D58A3;
+					};
 					0AFCBA432AB31814007D58A3 = {
 						CreatedOnToolsVersion = 14.3;
 						LastSwiftMigration = 1430;
@@ -295,11 +347,19 @@
 			projectRoot = "";
 			targets = (
 				0AFCBA432AB31814007D58A3 /* WarStat */,
+				0A7371752B07846700177EA4 /* WarStatTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0A7371742B07846700177EA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0AFCBA422AB31814007D58A3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +372,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A7371722B07846700177EA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7371792B07846800177EA4 /* WarStatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0AFCBA402AB31814007D58A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,6 +411,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0A73717B2B07846800177EA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AFCBA432AB31814007D58A3 /* WarStat */;
+			targetProxy = 0A73717A2B07846800177EA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		0AFCBA522AB31816007D58A3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -355,6 +431,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0A73717C2B07846800177EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AA.WarStatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WarStat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WarStat";
+			};
+			name = Debug;
+		};
+		0A73717D2B07846800177EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AA.WarStatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WarStat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WarStat";
+			};
+			name = Release;
+		};
 		0AFCBA562AB31816007D58A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -531,6 +652,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A73717E2B07846800177EA4 /* Build configuration list for PBXNativeTarget "WarStatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A73717C2B07846800177EA4 /* Debug */,
+				0A73717D2B07846800177EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0AFCBA3F2AB31814007D58A3 /* Build configuration list for PBXProject "WarStat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
