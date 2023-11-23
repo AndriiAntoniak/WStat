@@ -16,3 +16,4 @@ jobs:
         uses: actions/checkout@v2
       - name: Fastlane
         run: fastlane tests
+        working-directory: WStat/WarStat
