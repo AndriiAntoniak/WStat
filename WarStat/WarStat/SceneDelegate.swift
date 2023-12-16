@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window.windowScene = windowScene
         
-        #warning("Fix Demo button target and remove Main from here")
+        // TODO: Fix Demo button target and remove Main from here
         let mainVC = MainViewController()
         let demoVC = DemoViewController()
         window.rootViewController = demoVC

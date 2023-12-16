@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0A7371792B07846800177EA4 /* WarStatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7371782B07846800177EA4 /* WarStatTests.swift */; };
+		0A73719D2B1DFCC800177EA4 /* WarInfoNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73719C2B1DFCC800177EA4 /* WarInfoNetworkingTests.swift */; };
+		0A73719F2B1E033200177EA4 /* WarInfoNetworkingIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73719E2B1E033200177EA4 /* WarInfoNetworkingIntegrationTests.swift */; };
+		0A7371B62B2C953E00177EA4 /* wstat.cer in Resources */ = {isa = PBXBuildFile; fileRef = 0A7371B52B2C953E00177EA4 /* wstat.cer */; };
 		0A90E9522B02FD78005E084F /* WSNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 0A90E9512B02FD78005E084F /* WSNetworking */; };
 		0ACBE3632AD4C20A0048EC0F /* WarInfoNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3622AD4C20A0048EC0F /* WarInfoNetworking.swift */; };
 		0ACBE3652AD4C2260048EC0F /* WarInfoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBE3642AD4C2260048EC0F /* WarInfoURL.swift */; };
@@ -61,6 +64,9 @@
 /* Begin PBXFileReference section */
 		0A7371762B07846700177EA4 /* WarStatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarStatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7371782B07846800177EA4 /* WarStatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarStatTests.swift; sourceTree = "<group>"; };
+		0A73719C2B1DFCC800177EA4 /* WarInfoNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarInfoNetworkingTests.swift; sourceTree = "<group>"; };
+		0A73719E2B1E033200177EA4 /* WarInfoNetworkingIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarInfoNetworkingIntegrationTests.swift; sourceTree = "<group>"; };
+		0A7371B52B2C953E00177EA4 /* wstat.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = wstat.cer; sourceTree = "<group>"; };
 		0ACBE3622AD4C20A0048EC0F /* WarInfoNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarInfoNetworking.swift; sourceTree = "<group>"; };
 		0ACBE3642AD4C2260048EC0F /* WarInfoURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarInfoURL.swift; sourceTree = "<group>"; };
 		0ACBE3672AD4C25C0048EC0F /* SupportingLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingLanguage.swift; sourceTree = "<group>"; };
@@ -114,9 +120,19 @@
 		0A7371772B07846800177EA4 /* WarStatTests */ = {
 			isa = PBXGroup;
 			children = (
+				0A73719B2B1DFC8A00177EA4 /* WarInfoNetworking */,
 				0A7371782B07846800177EA4 /* WarStatTests.swift */,
 			);
 			path = WarStatTests;
+			sourceTree = "<group>";
+		};
+		0A73719B2B1DFC8A00177EA4 /* WarInfoNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				0A73719C2B1DFCC800177EA4 /* WarInfoNetworkingTests.swift */,
+				0A73719E2B1E033200177EA4 /* WarInfoNetworkingIntegrationTests.swift */,
+			);
+			path = WarInfoNetworking;
 			sourceTree = "<group>";
 		};
 		0ACBE3612AD4C1F90048EC0F /* WarStatNetworking */ = {
@@ -208,6 +224,7 @@
 		0AFCBA5C2AB33D34007D58A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0A7371B52B2C953E00177EA4 /* wstat.cer */,
 				0AFCBA502AB31816007D58A3 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -365,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AFCBA542AB31816007D58A3 /* LaunchScreen.storyboard in Resources */,
+				0A7371B62B2C953E00177EA4 /* wstat.cer in Resources */,
 				0AFCBA512AB31816007D58A3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +394,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A73719F2B1E033200177EA4 /* WarInfoNetworkingIntegrationTests.swift in Sources */,
+				0A73719D2B1DFCC800177EA4 /* WarInfoNetworkingTests.swift in Sources */,
 				0A7371792B07846800177EA4 /* WarStatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,6 +619,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGWDABRE5W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WarStat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -629,6 +650,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGWDABRE5W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WarStat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
